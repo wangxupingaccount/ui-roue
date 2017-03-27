@@ -1,5 +1,6 @@
-define(['app'], function(app){
-   return app.controller('indexCtrl', ['$scope','$rootScope','$http', function ($scope,$rootScope,$http) {
-      console.log('indexCtrl');
-   }])
+define(['app'],function(app){
+    app.register.controller('indexCtrl',function($scope){
+        $scope.title = "首页";
+        console.log('indexCtrl');
+    })
 })

@@ -1,0 +1,21 @@
+<div class="case-title">公司案例</div>
+<div class="case-list" ng-conntroller="caselistCtrl">
+<tm-pagination conf="paginationConf"></tm-pagination>
+    <div class="clear"></div>
+    <table class="table">
+        <tr>
+            <th>图片</th>
+            <th>内容</th>
+        </tr>
+        <tr ng-repeat="item in items">
+            <td>
+               <a ui-sref="case.detail({id: item.id})"><div class="img"><img ng-src="{{item.src}}"/></div></a>
+            </td>
+            <td>
+                <h1><a ui-sref="case.detail({id: item.id})">{{item.title}}</a></h1>
+                <p>{{item.content}}</p>
+            </td>
+        </tr>
+    </table>
+
+</div>

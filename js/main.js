@@ -1,33 +1,28 @@
 require.config({
     baseUrl: "js/",
     paths: {
-      "jquery":"libs/jquery.min.2.1.4",
+      "app" : "routes/appRoute",
       "angular" : "libs/angular.min",
-      "route" : "routes/appRoute",
-      "angular-route" : "libs/angular-route.min",
-      "uiRouter" : "libs/angular-ui-router.min",
-      "app" : "controllers/app",
-      "indexCtrl":"controllers/indexCtrl",
-      "contactCtrl":"controllers/contactCtrl",
-      "companyCtrl":"controllers/companyCtrl",
+      "router" : "libs/angular-ui-router",
+      "pagination" : "libs/tm.pagination"
     },
     shim: {
        'angular': {
           exports: 'angular'
        },
-       'angular-route':{
-          deps: ["angular"],
-          exports: 'angular-route'
+       'router':{
+          deps: ["angular"]
        },
-       'uiRouter':{
-          deps: ["angular"],
-          exports: 'angular-ui-router'
+       'pagination':{
+          deps: ["angular"]
+       },
+       'app':{
+          deps: ["router","pagination"]
        }
     }
 });
 
-require(['jquery','angular','angular-route','uiRouter','app','route','indexCtrl','contactCtrl','companyCtrl'],function ($,angular){
-    $(function () {
-        angular.bootstrap(document,["pinganApp"]);
-    })
+require(['app'],function (){
+    angular.bootstrap(document,["myModule"]);
 });
+

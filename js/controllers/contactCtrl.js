@@ -1,5 +1,6 @@
-define(['app'], function(app){
-   return app.controller('contactCtrl', ['$scope','$rootScope','$http', function ($scope,$rootScope,$http) {
-      console.log('contactCtrl');
-   }])
+define(['app'],function(app){
+    app.register.controller('contactCtrl',function($scope){
+        $scope.contact = "联系我们";
+        console.log('contactCtrl');
+    })
 })

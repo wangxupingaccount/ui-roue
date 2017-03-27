@@ -14,40 +14,120 @@ h1, h2, h3, h4, h5, h6, hr, dt, dd, dl { font-size: 12px; margin: 0; padding: 0;
 em, i { font-style: normal; }
 a{ text-decoration: none; }
 .header{
-     height: 60px;
-     width: 80%;
+     height: 42px;
+     width: 100%;
      margin: 0 auto;
+     background: #393a3e;
+}
+.header ul{
+    width: 800px;
+    margin: 0 auto;
 }
 .header li{
     float: left;
-    line-height: 60px;
-    padding: 0 30px;
+    line-height: 42px;
+    padding: 0 50px;
+    font-size: 16px;
 }
-.companyMain{
-    width: 80%;
+.header li a{
+    line-height: 42px;
+    color: #fff;
+}
+.index-main{
+    width: 800px;
     margin: 0 auto;
-    height: 300px;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+}
+.contact-main{
+    width: 800px;
+    margin: 0 auto;
+    height: 600px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.companyMain{
+    width: 800px;
+    margin: 0 auto;
 }
 .company-left{
-    width: 30%;
+    width: 150px;
     float: left;
-    background: #999;
-    height: 290px;
     padding-top: 10px;
 }
 .company-left li{
-     height: 30px;
-     line-height: 30px;
+     height: 40px;
+     line-height: 40px;
 }
 .company-left li a{
-    color: #fff;
+    color: #000;
     display: block;
     text-align: center;
 }
 .company-right{
-    width: 70%;
+    width: 630px;
     float: right;
-    background: green;
-    height: 300px;
+}
+.company-detail{
+    padding: 30px;
+    padding-top: 10px;
+}
+.company-detail h1{
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+.company-detail .content{
+    text-align: left:
 }
 
+.case-left{
+    width: 150px;
+    float: left;
+    padding-top: 10px;
+}
+.case-left li a{
+    color: #000;
+    display: block;
+    text-align: center;
+}
+.case-right{
+    width: 630px;
+    float: right;
+}
+.case-title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.case-list .img{
+   width: 100px;
+   height: 100px;
+}
+.case-list .img img{
+    width: 100px;
+    height: 100px;
+}
+.case-list td h1{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.case-list td p{
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.page-list .pagination {float:left;}
+.page-list .pagination span {cursor: pointer;}
+.page-list .pagination .separate span{cursor: default; border-top:none;border-bottom:none;}
+.page-list .pagination .separate span:hover {background: none;}
+.page-list .page-total {float:left; margin: 25px 20px;}
+.page-list .page-total input, .page-list .page-total select{height: 26px; border: 1px solid #ddd;}
+.page-list .page-total input {width: 40px; padding-left:3px;}
+.page-list .page-total select {width: 50px;}
